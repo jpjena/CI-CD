@@ -3,6 +3,8 @@ service: ci-cd
 provider:
   name: aws
   runtime: nodejs14.x
+  deploymentBucket:
+  name: my.lambda.deployment.bucket
   stage: dev
   region: us-east-1
 
