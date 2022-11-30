@@ -3,8 +3,9 @@ service: ci-cd
 provider:
   name: aws
   runtime: nodejs14.x
+  deploymentPrefix: serverless
   deploymentBucket:
-  name: my.lambda.deployment.bucket
+  name: my.lambda.deployment.bucket1
   stage: dev
   region: us-east-1
 
