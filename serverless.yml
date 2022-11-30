@@ -2,13 +2,13 @@ service: ci-cd
 
 provider:
   name: aws
+  stage: dev
+  region: us-east-1
   runtime: nodejs14.x
   deploymentPrefix: serverless
   deploymentBucket:
-  name: my.lambda.deployment.bucket1
-  stage: dev
-  region: us-east-1
-
+    name: my.lambda.deployment.bucket1
+  
 functions:
   hello:
     handler: src/handler.generateRandomNumber
