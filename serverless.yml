@@ -7,7 +7,7 @@ provider:
   runtime: nodejs14.x
   deploymentPrefix: serverless
   deploymentBucket:
-    name: my.lambda.deployment.bucket1
+    name: my.lambda.deployment.bucket
   
 functions:
   hello:
