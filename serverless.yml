@@ -23,6 +23,14 @@ provider:
     #sseCustomerAlgorithim: AES256
     #sseCustomerKey: string
     #sseCustomerKeyMD5: md5sum
+  	
+package:
+  patterns:
+    - src/**
+    - handler.js
+  individually: true
+  artifact: my-lambda.zip
+    
   
 functions:
   hello:
